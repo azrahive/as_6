@@ -3,50 +3,123 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 2px solid #555;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 30px;
+    margin-right: 5px;
 }
 
 .nav-buttons button {
     margin: 0 5px;
-    padding: 5px 10px;
-    background-color: #555;
+    padding: 8px 12px;
+    background-color: #6c63ff;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .banner {
-    margin-top: 80px;
-    padding: 20px;
-    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 60px;
+}
+
+.banner-content {
+    text-align: left;
+    max-width: 500px;
+}
+
+.highlight {
+    color: blue;
+    font-weight: bold;
+}
+
+.banner-image img {
+    width: 300px;
+    border-radius: 50%;
 }
 
 input, button {
-    margin: 5px;
+    display: block;
+    width: 100%;
     padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.faq-section, .vocabulary-section {
-    margin: 20px;
-    padding: 20px;
+.btn {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+}
+
+/* Lesson Section */
+.lessons-section {
+    padding: 40px;
+    text-align: center;
+    background: white;
+}
+
+.lesson-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lesson-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 40px;
+    text-align: left;
+}
+
+.faq {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq details {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .footer {
     background-color: #333;
     color: white;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
 }

@@ -3,45 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Vocabulary App</title>
+    <title>English Janala</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Vocab App</div>
+        <div class="brand">
+            <img src="logo.png" alt="Logo">
+            <span>জানালা</span>
+        </div>
         <div class="nav-buttons">
+            <button onclick="scrollToSection('lessons')">Lessons</button>
             <button onclick="scrollToSection('faq')">FAQ</button>
-            <button onclick="scrollToSection('vocabulary')">Learn</button>
             <button onclick="logout()">Logout</button>
         </div>
     </nav>
 
     <section id="banner" class="banner">
-        <h1>Welcome to English Janala</h1>
-        <p>Expand your vocabulary effectively!</p>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Enter your name">
-            <input type="password" id="password" placeholder="Enter password">
-            <button type="submit">Login</button>
-        </form>
+        <div class="banner-content">
+            <h1><span class="highlight">English</span> is Easy!!</h1>
+            <p>
+                আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে আরেকটি Level এ।
+            </p>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Enter Your Name">
+                <input type="password" id="password" placeholder="********">
+                <button type="submit" class="btn">Get started</button>
+            </form>
+        </div>
+        <div class="banner-image">
+            <img src="image.png" alt="Learning Image">
+        </div>
+    </section>
+
+    <section id="lessons" class="lessons-section">
+        <h2><span class="highlight">Let's</span> Learn Vocabularies</h2>
+        <div class="lesson-buttons">
+            <button>Lesson - 1</button>
+            <button>Lesson - 2</button>
+            <button>Lesson - 3</button>
+            <button>Lesson - 4</button>
+            <button>Lesson - 5</button>
+            <button>Lesson - 6</button>
+            <button>Lesson - 7</button>
+        </div>
+        <div class="lesson-info">
+            <p>আপনি একটি Lesson Select করুন।</p>
+        </div>
     </section>
 
     <section id="faq" class="faq-section">
-        <h2>FAQ</h2>
-        <p>Difference between var, let, and const?</p>
-        <p>How do map(), forEach(), and filter() differ?</p>
-        <p>Explanation of arrow functions and JavaScript Promises</p>
-    </section>
-
-    <section id="vocabulary" class="vocabulary-section">
-        <h2>Vocabulary Lessons</h2>
-        <div id="lessons"></div>
-        <div id="words"></div>
+        <h2><span class="highlight">Frequently</span> Asked Questions</h2>
+        <div class="faq">
+            <details>
+                <summary>1. How can I start learning English on this website?</summary>
+                <p>You can start by exploring our beginner lessons, interactive exercises, and quizzes.</p>
+            </details>
+            <details>
+                <summary>2. Is this website free to use?</summary>
+            </details>
+            <details>
+                <summary>3. Do I need to create an account?</summary>
+            </details>
+            <details>
+                <summary>4. How can I build my English vocabulary?</summary>
+            </details>
+            <details>
+                <summary>5. Do you offer certificates for completed courses?</summary>
+            </details>
+        </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2025 Vocab App</p>
+        <p>&copy; 2025 English Janala</p>
     </footer>
 
     <script src="script.js"></script>
