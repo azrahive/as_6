@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Vocab App</div>
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('faq')">FAQ</button>
+            <button onclick="scrollToSection('vocabulary')">Learn</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <section id="banner" class="banner">
+        <h1>Welcome to English Janala</h1>
+        <p>Expand your vocabulary effectively!</p>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Enter your name">
+            <input type="password" id="password" placeholder="Enter password">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <h2>FAQ</h2>
+        <p>Difference between var, let, and const?</p>
+        <p>How do map(), forEach(), and filter() differ?</p>
+        <p>Explanation of arrow functions and JavaScript Promises</p>
+    </section>
+
+    <section id="vocabulary" class="vocabulary-section">
+        <h2>Vocabulary Lessons</h2>
+        <div id="lessons"></div>
+        <div id="words"></div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Vocab App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
